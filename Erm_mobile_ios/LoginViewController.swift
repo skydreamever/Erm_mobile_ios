@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController,NSURLConnectionDataDelegate {
 
@@ -87,15 +88,8 @@ class LoginViewController: UIViewController,NSURLConnectionDataDelegate {
         //############################################//
         params["success"] = "openMainview"
         params["type"] = "nc"
-        
-        do{//swift2.0新增try catch
-//            let paramsData = try NSJSONSerialization.dataWithJSONObject(params, options: NSJSONWritingOptions.PrettyPrinted)
-//            postJson["params"] = String(NSString(data: paramsData, encoding: NSUTF8StringEncoding)!);
-            postJson["params"] = params
+        postJson["params"] = params
             
-        }catch{
-            NSLog("---------->json转字符串错误");
-        }
         //---------------------------------------------------------------------//
 
         var rootjson = Dictionary<String,AnyObject>()
@@ -131,51 +125,31 @@ class LoginViewController: UIViewController,NSURLConnectionDataDelegate {
         }
         
         
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func request(url:String,Method:String,data:String){
-        //            url = @"http://academy.yonyou.com/api/postTest.ashx";
+        
+        Alamofire.request(.POST, URLString: url, parameters: [:], encoding: .Custom({
+            (convertible, params) in
+            let mutableRequest = convertible.URLRequest.copy() as! NSMutableURLRequest
+            mutableRequest.HTTPBody = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+            return (mutableRequest, nil)
+        })).responseJSON { (_, _, JSON, _) -> Void in
+            
+            let dic:Dictionary = JSON as! [String:String]
 
-        let urlRequest = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.ReloadRevalidatingCacheData, timeoutInterval: 30)
-        
-        let bodyData = data.dataUsingEncoding(NSUTF8StringEncoding)
-        urlRequest.HTTPBody = bodyData
-        urlRequest.setValue("Accept-Encoding", forHTTPHeaderField: "gzip");
-        urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type");
-        urlRequest.HTTPMethod = "POST"
-        
-//        var receivedData = NSMutableData(length: 0);
-        
-//        let newConnection = NSURLConnection(request: urlRequest, delegate: self)
-//        
-//        newConnection?.start()
-        
-        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
-            if data != nil{
-            
-                do{
-                    let dic:Dictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! [String:String]
-                    
-                    let data:String? = dic["data"]
-                    let type:String? = dic["tp"]
-                    let result = String.decoding(data!,type: type!)
-                    NSLog(result!)
-                } catch{
-                    NSLog("---------->json转字符串错误");
-                    
-                }
-                
-                
-            }
-            
+            let data:String? = dic["data"]
+            let type:String? = dic["tp"]
+            let result = String.decoding(data!,type: type!)
+            NSLog(result!)
+
             
         }
+
         
     }
 
