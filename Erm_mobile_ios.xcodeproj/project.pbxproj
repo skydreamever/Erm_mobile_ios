@@ -21,6 +21,9 @@
 		D25C24121B569D82000E1A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25C24101B569D82000E1A8D /* LaunchScreen.storyboard */; };
 		D28F7FAF1B588DA4006966DA /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */; };
 		D28F7FB11B5899D1006966DA /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F7FB01B5899D1006966DA /* NetworkUtils.swift */; };
+		D2E747281B58D67D00822AF5 /* ErmMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E747271B58D67D00822AF5 /* ErmMainViewController.swift */; };
+		D2E7472A1B58DF4300822AF5 /* ErmMainCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E747291B58DF4300822AF5 /* ErmMainCollectionCell.swift */; };
+		D2E7472F1B58F73000822AF5 /* AnimationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E7472E1B58F73000822AF5 /* AnimationUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,10 @@
 		D25C24131B569D82000E1A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceUtils.swift; sourceTree = "<group>"; };
 		D28F7FB01B5899D1006966DA /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		D2E747271B58D67D00822AF5 /* ErmMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmMainViewController.swift; sourceTree = "<group>"; };
+		D2E747291B58DF4300822AF5 /* ErmMainCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmMainCollectionCell.swift; sourceTree = "<group>"; };
+		D2E7472D1B58F73000822AF5 /* AnimationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtils.h; sourceTree = "<group>"; };
+		D2E7472E1B58F73000822AF5 /* AnimationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationUtils.m; sourceTree = "<group>"; };
 		F3FDB18C12CECA8E96BC6F2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +104,8 @@
 				D25B05C81B57679F00F033FC /* GTMDefines.h */,
 				D25C24071B569D82000E1A8D /* AppDelegate.swift */,
 				D25C24091B569D82000E1A8D /* LoginViewController.swift */,
+				D2E747271B58D67D00822AF5 /* ErmMainViewController.swift */,
+				D2E747291B58DF4300822AF5 /* ErmMainCollectionCell.swift */,
 				D28F7FB01B5899D1006966DA /* NetworkUtils.swift */,
 				D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */,
 				D25C240B1B569D82000E1A8D /* Main.storyboard */,
@@ -108,6 +117,8 @@
 				D25B05B61B57576900F033FC /* NSData+GZIP.swift */,
 				D2176A361B57997900BE6CEC /* DESUtils.h */,
 				D2176A371B57997900BE6CEC /* DESUtils.m */,
+				D2E7472D1B58F73000822AF5 /* AnimationUtils.h */,
+				D2E7472E1B58F73000822AF5 /* AnimationUtils.m */,
 			);
 			path = Erm_mobile_ios;
 			sourceTree = "<group>";
@@ -248,10 +259,13 @@
 				D25B05C91B57679F00F033FC /* GTMBase64.m in Sources */,
 				D25B05B71B57576900F033FC /* NSData+GZIP.swift in Sources */,
 				D25B05B31B57533500F033FC /* String+StringUtils.swift in Sources */,
+				D2E7472F1B58F73000822AF5 /* AnimationUtils.m in Sources */,
+				D2E747281B58D67D00822AF5 /* ErmMainViewController.swift in Sources */,
 				D28F7FB11B5899D1006966DA /* NetworkUtils.swift in Sources */,
 				D25B05B11B573B7A00F033FC /* DeviceUtils.swift in Sources */,
 				D25C24081B569D82000E1A8D /* AppDelegate.swift in Sources */,
 				D2176A381B57997900BE6CEC /* DESUtils.m in Sources */,
+				D2E7472A1B58DF4300822AF5 /* ErmMainCollectionCell.swift in Sources */,
 				D28F7FAF1B588DA4006966DA /* ServiceUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

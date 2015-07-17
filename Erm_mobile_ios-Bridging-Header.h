@@ -6,3 +6,4 @@
 #include <zlib.h> 
 #import "GTMBase64.h"
 #import "DESUtils.h"
+#import "AnimationUtils.h"
