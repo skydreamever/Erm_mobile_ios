@@ -19,6 +19,8 @@
 		D25C240D1B569D82000E1A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25C240B1B569D82000E1A8D /* Main.storyboard */; };
 		D25C240F1B569D82000E1A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25C240E1B569D82000E1A8D /* Assets.xcassets */; };
 		D25C24121B569D82000E1A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25C24101B569D82000E1A8D /* LaunchScreen.storyboard */; };
+		D28F7FAF1B588DA4006966DA /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */; };
+		D28F7FB11B5899D1006966DA /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F7FB01B5899D1006966DA /* NetworkUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		D25C240E1B569D82000E1A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D25C24111B569D82000E1A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25C24131B569D82000E1A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceUtils.swift; sourceTree = "<group>"; };
+		D28F7FB01B5899D1006966DA /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		F3FDB18C12CECA8E96BC6F2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,8 @@
 				D25B05C81B57679F00F033FC /* GTMDefines.h */,
 				D25C24071B569D82000E1A8D /* AppDelegate.swift */,
 				D25C24091B569D82000E1A8D /* LoginViewController.swift */,
+				D28F7FB01B5899D1006966DA /* NetworkUtils.swift */,
+				D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */,
 				D25C240B1B569D82000E1A8D /* Main.storyboard */,
 				D25C240E1B569D82000E1A8D /* Assets.xcassets */,
 				D25C24101B569D82000E1A8D /* LaunchScreen.storyboard */,
@@ -242,9 +248,11 @@
 				D25B05C91B57679F00F033FC /* GTMBase64.m in Sources */,
 				D25B05B71B57576900F033FC /* NSData+GZIP.swift in Sources */,
 				D25B05B31B57533500F033FC /* String+StringUtils.swift in Sources */,
+				D28F7FB11B5899D1006966DA /* NetworkUtils.swift in Sources */,
 				D25B05B11B573B7A00F033FC /* DeviceUtils.swift in Sources */,
 				D25C24081B569D82000E1A8D /* AppDelegate.swift in Sources */,
 				D2176A381B57997900BE6CEC /* DESUtils.m in Sources */,
+				D28F7FAF1B588DA4006966DA /* ServiceUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,7 @@ extension String{
             return DESUtils.decryptWithText(string)
         }else if type == "des_gzip"{
             let data = GTMBase64.decodeString(string).gunzippedData()
-            return String(NSString(data: data!, encoding: NSUTF8StringEncoding))
+            return  NSString(data: data!, encoding: NSUTF8StringEncoding)! as String
         }
         return nil
         
