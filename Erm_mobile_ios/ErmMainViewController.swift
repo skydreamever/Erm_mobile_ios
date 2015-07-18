@@ -22,6 +22,17 @@ class ErmMainViewController: UIViewController,UICollectionViewDataSource,UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "首页"
+        
+        self.navigationController?.tabBarItem.selectedImage = UIImage(named: "home_touch")?.scaleImage(0.5)
+        self.navigationController?.tabBarItem.image = UIImage(named: "home")?.scaleImage(0.5)
+        
+        self.navigationController?.tabBarController?.title = "我的报销"
+
+        self.title = "我的报销"
+    
+        
+        
         self.view.backgroundColor = UIColor.whiteColor()
         setupCollectionView()
         let twoPress = UITapGestureRecognizer(target: self, action: "twoPress")
