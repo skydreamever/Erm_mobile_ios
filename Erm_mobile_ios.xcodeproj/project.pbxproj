@@ -22,6 +22,18 @@
 		D28F7FAF1B588DA4006966DA /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */; };
 		D28F7FB11B5899D1006966DA /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F7FB01B5899D1006966DA /* NetworkUtils.swift */; };
 		D293FDFC1B59DEE400680166 /* UIImage+UImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FDFB1B59DEE400680166 /* UIImage+UImageUtils.swift */; };
+		D293FDFE1B59F27600680166 /* ContentTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FDFD1B59F27600680166 /* ContentTableController.swift */; };
+		D293FE001B59F4CC00680166 /* ErmCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FDFF1B59F4CC00680166 /* ErmCommonCell.swift */; };
+		D293FE021B59F6DB00680166 /* ErmBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FE011B59F6DB00680166 /* ErmBadgeView.swift */; };
+		D293FE131B59F80800680166 /* ErmCommonLabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FE121B59F80800680166 /* ErmCommonLabelItem.swift */; };
+		D293FE151B59F83800680166 /* ErmCommonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FE141B59F83800680166 /* ErmCommonItem.swift */; };
+		D293FE171B59FA6D00680166 /* ErmCommonArrowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FE161B59FA6D00680166 /* ErmCommonArrowItem.swift */; };
+		D293FE191B59FAD100680166 /* ErmCommonSwitchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FE181B59FAD100680166 /* ErmCommonSwitchItem.swift */; };
+		D293FE1B1B59FB0600680166 /* ErmCommonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FE1A1B59FB0600680166 /* ErmCommonGroup.swift */; };
+		D293FE1D1B59FD3300680166 /* UIView+UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293FE1C1B59FD3300680166 /* UIView+UIViewUtils.swift */; };
+		D2BF63C51B5C7A84007BB102 /* ErmEnumUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF63C41B5C7A84007BB102 /* ErmEnumUtils.m */; };
+		D2BF63CE1B5C8EF2007BB102 /* ErmCommonTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF63CD1B5C8EF2007BB102 /* ErmCommonTableView.swift */; };
+		D2BF63D01B5C9368007BB102 /* ErmCommonSubItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF63CF1B5C9368007BB102 /* ErmCommonSubItem.swift */; };
 		D2E747281B58D67D00822AF5 /* ErmMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E747271B58D67D00822AF5 /* ErmMainViewController.swift */; };
 		D2E7472A1B58DF4300822AF5 /* ErmMainCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E747291B58DF4300822AF5 /* ErmMainCollectionCell.swift */; };
 		D2E7472F1B58F73000822AF5 /* AnimationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E7472E1B58F73000822AF5 /* AnimationUtils.m */; };
@@ -44,12 +56,25 @@
 		D25C24071B569D82000E1A8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D25C24091B569D82000E1A8D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D25C240C1B569D82000E1A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D25C240E1B569D82000E1A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D25C240E1B569D82000E1A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Erm_mobile_ios/Assets.xcassets; sourceTree = "<group>"; };
 		D25C24111B569D82000E1A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25C24131B569D82000E1A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceUtils.swift; sourceTree = "<group>"; };
 		D28F7FB01B5899D1006966DA /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		D293FDFB1B59DEE400680166 /* UIImage+UImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UImageUtils.swift"; sourceTree = "<group>"; };
+		D293FDFD1B59F27600680166 /* ContentTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTableController.swift; sourceTree = "<group>"; };
+		D293FDFF1B59F4CC00680166 /* ErmCommonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonCell.swift; sourceTree = "<group>"; };
+		D293FE011B59F6DB00680166 /* ErmBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmBadgeView.swift; sourceTree = "<group>"; };
+		D293FE121B59F80800680166 /* ErmCommonLabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonLabelItem.swift; sourceTree = "<group>"; };
+		D293FE141B59F83800680166 /* ErmCommonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonItem.swift; sourceTree = "<group>"; };
+		D293FE161B59FA6D00680166 /* ErmCommonArrowItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonArrowItem.swift; sourceTree = "<group>"; };
+		D293FE181B59FAD100680166 /* ErmCommonSwitchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonSwitchItem.swift; sourceTree = "<group>"; };
+		D293FE1A1B59FB0600680166 /* ErmCommonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonGroup.swift; sourceTree = "<group>"; };
+		D293FE1C1B59FD3300680166 /* UIView+UIViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+UIViewUtils.swift"; sourceTree = "<group>"; };
+		D2BF63C31B5C7A84007BB102 /* ErmEnumUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErmEnumUtils.h; sourceTree = "<group>"; };
+		D2BF63C41B5C7A84007BB102 /* ErmEnumUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErmEnumUtils.m; sourceTree = "<group>"; };
+		D2BF63CD1B5C8EF2007BB102 /* ErmCommonTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonTableView.swift; sourceTree = "<group>"; };
+		D2BF63CF1B5C9368007BB102 /* ErmCommonSubItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmCommonSubItem.swift; sourceTree = "<group>"; };
 		D2E747271B58D67D00822AF5 /* ErmMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmMainViewController.swift; sourceTree = "<group>"; };
 		D2E747291B58DF4300822AF5 /* ErmMainCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErmMainCollectionCell.swift; sourceTree = "<group>"; };
 		D2E7472D1B58F73000822AF5 /* AnimationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtils.h; sourceTree = "<group>"; };
@@ -82,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D25B05C11B57624800F033FC /* libz.1.dylib */,
+				D25C240E1B569D82000E1A8D /* Assets.xcassets */,
 				D25C24061B569D82000E1A8D /* Erm_mobile_ios */,
 				D25C24051B569D82000E1A8D /* Products */,
 				D25B05C31B57637A00F033FC /* Erm_mobile_ios-Bridging-Header.h */,
@@ -108,10 +134,11 @@
 				D25C24091B569D82000E1A8D /* LoginViewController.swift */,
 				D2E747271B58D67D00822AF5 /* ErmMainViewController.swift */,
 				D2E747291B58DF4300822AF5 /* ErmMainCollectionCell.swift */,
+				D293FDFD1B59F27600680166 /* ContentTableController.swift */,
+				D2BF63CD1B5C8EF2007BB102 /* ErmCommonTableView.swift */,
 				D28F7FB01B5899D1006966DA /* NetworkUtils.swift */,
 				D28F7FAE1B588DA4006966DA /* ServiceUtils.swift */,
 				D25C240B1B569D82000E1A8D /* Main.storyboard */,
-				D25C240E1B569D82000E1A8D /* Assets.xcassets */,
 				D25C24101B569D82000E1A8D /* LaunchScreen.storyboard */,
 				D25C24131B569D82000E1A8D /* Info.plist */,
 				D25B05B01B573B7A00F033FC /* DeviceUtils.swift */,
@@ -122,6 +149,17 @@
 				D2E7472D1B58F73000822AF5 /* AnimationUtils.h */,
 				D2E7472E1B58F73000822AF5 /* AnimationUtils.m */,
 				D293FDFB1B59DEE400680166 /* UIImage+UImageUtils.swift */,
+				D293FDFF1B59F4CC00680166 /* ErmCommonCell.swift */,
+				D293FE011B59F6DB00680166 /* ErmBadgeView.swift */,
+				D293FE121B59F80800680166 /* ErmCommonLabelItem.swift */,
+				D293FE161B59FA6D00680166 /* ErmCommonArrowItem.swift */,
+				D293FE181B59FAD100680166 /* ErmCommonSwitchItem.swift */,
+				D293FE141B59F83800680166 /* ErmCommonItem.swift */,
+				D293FE1A1B59FB0600680166 /* ErmCommonGroup.swift */,
+				D2BF63CF1B5C9368007BB102 /* ErmCommonSubItem.swift */,
+				D293FE1C1B59FD3300680166 /* UIView+UIViewUtils.swift */,
+				D2BF63C31B5C7A84007BB102 /* ErmEnumUtils.h */,
+				D2BF63C41B5C7A84007BB102 /* ErmEnumUtils.m */,
 			);
 			path = Erm_mobile_ios;
 			sourceTree = "<group>";
@@ -260,17 +298,29 @@
 			files = (
 				D25C240A1B569D82000E1A8D /* LoginViewController.swift in Sources */,
 				D25B05C91B57679F00F033FC /* GTMBase64.m in Sources */,
+				D293FE171B59FA6D00680166 /* ErmCommonArrowItem.swift in Sources */,
+				D2BF63CE1B5C8EF2007BB102 /* ErmCommonTableView.swift in Sources */,
 				D25B05B71B57576900F033FC /* NSData+GZIP.swift in Sources */,
 				D25B05B31B57533500F033FC /* String+StringUtils.swift in Sources */,
+				D293FDFE1B59F27600680166 /* ContentTableController.swift in Sources */,
+				D293FE191B59FAD100680166 /* ErmCommonSwitchItem.swift in Sources */,
 				D2E7472F1B58F73000822AF5 /* AnimationUtils.m in Sources */,
 				D2E747281B58D67D00822AF5 /* ErmMainViewController.swift in Sources */,
 				D28F7FB11B5899D1006966DA /* NetworkUtils.swift in Sources */,
 				D293FDFC1B59DEE400680166 /* UIImage+UImageUtils.swift in Sources */,
 				D25B05B11B573B7A00F033FC /* DeviceUtils.swift in Sources */,
+				D293FE001B59F4CC00680166 /* ErmCommonCell.swift in Sources */,
+				D293FE1B1B59FB0600680166 /* ErmCommonGroup.swift in Sources */,
 				D25C24081B569D82000E1A8D /* AppDelegate.swift in Sources */,
+				D293FE151B59F83800680166 /* ErmCommonItem.swift in Sources */,
 				D2176A381B57997900BE6CEC /* DESUtils.m in Sources */,
+				D293FE1D1B59FD3300680166 /* UIView+UIViewUtils.swift in Sources */,
 				D2E7472A1B58DF4300822AF5 /* ErmMainCollectionCell.swift in Sources */,
+				D2BF63D01B5C9368007BB102 /* ErmCommonSubItem.swift in Sources */,
+				D2BF63C51B5C7A84007BB102 /* ErmEnumUtils.m in Sources */,
 				D28F7FAF1B588DA4006966DA /* ServiceUtils.swift in Sources */,
+				D293FE021B59F6DB00680166 /* ErmBadgeView.swift in Sources */,
+				D293FE131B59F80800680166 /* ErmCommonLabelItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

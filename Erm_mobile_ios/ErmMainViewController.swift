@@ -40,13 +40,19 @@ class ErmMainViewController: UIViewController,UICollectionViewDataSource,UIColle
         twoPress.numberOfTouchesRequired = 1
         self.view.addGestureRecognizer(twoPress)
         
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    
+    override func viewWillAppear(animated: Bool) {
+        
+        self.tabBarController?.tabBar.hidden = false
+
+    }
     
     func setupCollectionView(){
         ermCollectionView.backgroundColor = UIColor.whiteColor()
@@ -77,6 +83,25 @@ class ErmMainViewController: UIViewController,UICollectionViewDataSource,UIColle
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+
+        
+        UIView.animateWithDuration(0.05, animations: { () -> Void in
+            cell?.backgroundColor = UIColor.grayColor()
+        }) { (finished) -> Void in
+            cell?.backgroundColor = UIColor.whiteColor()
+
+            
+            
+        }
+        
+        let tag = cell!.tag
+        if validTag[tag] && tag == 0 {
+            self.performSegueWithIdentifier("collectionCellSelected", sender: self)
+        }
+        
+        
+        
     }
     
     
@@ -89,7 +114,7 @@ class ErmMainViewController: UIViewController,UICollectionViewDataSource,UIColle
     
     func twoPress(){
         
-        for var cell in waddingCell{
+        for cell in waddingCell{
             cell.deleteButton.hidden = true
             cell.layer.removeAllAnimations()
             AnimationUtils.endWobble(cell)
